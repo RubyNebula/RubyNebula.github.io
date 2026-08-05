@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -12,33 +13,37 @@
         body {
             font-family: Georgia, serif;
             background:
-                radial-gradient(circle at top, rgba(120, 100, 200, 0.25), transparent 40%),
+                radial-gradient(circle at top, rgba(120, 100, 200, 0.25), transparent 45%),
                 linear-gradient(135deg, #050816, #101a3a, #1b1038);
             color: #f5f5f5;
             line-height: 1.8;
             margin: 0;
             padding: 0;
             min-height: 100vh;
+            overflow-x: hidden;
         }
 
-       body::before {
-    content: "✦";
-    position: fixed;
-    top: 15%;
-    left: 20%;
-    color: rgba(255,255,255,0.5);
-    font-size: 18px;
-    text-shadow:
-        120px 40px rgba(255,255,255,0.5),
-        250px 150px rgba(255,255,255,0.3),
-        400px 80px rgba(255,255,255,0.6),
-        600px 250px rgba(255,255,255,0.4),
-        800px 100px rgba(255,255,255,0.5),
-        150px 350px rgba(255,255,255,0.3),
-        500px 450px rgba(255,255,255,0.5);
-    pointer-events: none;
 
+        /* Scattered stars */
+        body::before {
+            content: "✦";
+            position: fixed;
+            top: 8%;
+            left: 10%;
+            color: rgba(255,255,255,0.45);
+            font-size: 20px;
+            text-shadow:
+                120px 70px rgba(255,255,255,0.4),
+                280px 180px rgba(255,255,255,0.3),
+                450px 50px rgba(255,255,255,0.5),
+                620px 240px rgba(255,255,255,0.35),
+                850px 120px rgba(255,255,255,0.45),
+                200px 420px rgba(255,255,255,0.3),
+                520px 500px rgba(255,255,255,0.4),
+                900px 400px rgba(255,255,255,0.35);
+            pointer-events: none;
         }
+
 
 
         header {
@@ -47,20 +52,23 @@
         }
 
 
+
         h1 {
             font-size: 4em;
             letter-spacing: 5px;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
             text-shadow: 0 0 25px rgba(255,255,255,0.5);
         }
+
 
 
         .subtitle {
             font-size: 1.3em;
             color: #d8d8e8;
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
         }
+
 
 
         nav {
@@ -69,17 +77,20 @@
         }
 
 
+
         nav a {
-            color: #ffffff;
+            color: white;
             text-decoration: none;
             margin: 0 18px;
             font-size: 1.1em;
         }
 
 
+
         nav a:hover {
-            color: #c9b6ff;
+            color: #d7c5ff;
         }
+
 
 
         main {
@@ -87,6 +98,7 @@
             margin: auto;
             padding: 20px;
         }
+
 
 
         section {
@@ -98,17 +110,20 @@
         }
 
 
+
         h2 {
             font-size: 2em;
-            margin-top: 0;
             color: #e8ddff;
+            margin-top: 0;
         }
+
 
 
         .article {
             border-bottom: 1px solid rgba(255,255,255,0.2);
             padding: 20px 0;
         }
+
 
 
         .article a {
@@ -118,9 +133,11 @@
         }
 
 
+
         .article a:hover {
             color: white;
         }
+
 
 
         .topics span {
@@ -132,10 +149,11 @@
         }
 
 
+
         footer {
             text-align: center;
             padding: 50px;
-            color: #aaa;
+            color: #aaaaaa;
         }
 
 
@@ -144,7 +162,9 @@
 </head>
 
 
+
 <body>
+
 
 
 <header>
@@ -152,10 +172,8 @@
     <h1>Ruby Nebula</h1>
 
     <p class="subtitle">
-        Writer, Dreamer, Romantic, Philocalist <br><br>
-        
-        Exploring Humanity, Psychology, Society, Culture, <br><br>
-        
+        Writer, Dreamer, Romantic, Philocalist<br><br>
+        Exploring Humanity, Psychology, Society, Culture,<br>
         and the Empathy Within the Human Experience
     </p>
 
@@ -168,7 +186,7 @@
     <a href="#">Home</a>
     <a href="#">Writings</a>
     <a href="#">About</a>
-    <a href="#">Projects</a>
+    
 
 </nav>
 
@@ -177,24 +195,25 @@
 <main>
 
 
+
 <section>
 
     <h2>Welcome</h2>
 
     <p>
         A personal archive of essays, insights, and explorations
-        Here I write about psychology,
-        culture, society, and the stories that often go unheard
+        into humanity, society, psychology, and the stories that often
+        remain unheard
     </p>
 
 </section>
 
 
 
+
 <section>
 
     <h2>Latest Writings</h2>
-
 
     <div class="article">
 
@@ -208,19 +227,20 @@
 
     </div>
 
-
 </section>
+
+
 
 
 
 <section class="topics">
 
-    <h2>Exploring</h2>
+    <h2>Constellations</h2>
 
-    <span>Crime and Justice</span>
-    <span>Culture, Society and Human Rights</span>
+    <span>Crime & Justice</span>
+    <span>Human Rights, Culture & Society</span>
     <span>Gender and Sexuality</span>
-    <span>History</span>
+    <span>Echoes of History</span>
     <span>Ruby's Stories</span>
 
 </section>
@@ -236,6 +256,7 @@
     © Ruby Nebula
 
 </footer>
+
 
 
 </body>

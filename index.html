@@ -21,15 +21,23 @@
             min-height: 100vh;
         }
 
-        body::before {
-            content: "✦   ✧      ✦        ✧     ✦        ✧";
-            position: fixed;
-            top: 10%;
-            left: 5%;
-            font-size: 2rem;
-            color: rgba(255,255,255,0.35);
-            letter-spacing: 40px;
-            pointer-events: none;
+       body::before {
+    content: "✦";
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    color: rgba(255,255,255,0.5);
+    font-size: 18px;
+    text-shadow:
+        120px 40px rgba(255,255,255,0.5),
+        250px 150px rgba(255,255,255,0.3),
+        400px 80px rgba(255,255,255,0.6),
+        600px 250px rgba(255,255,255,0.4),
+        800px 100px rgba(255,255,255,0.5),
+        150px 350px rgba(255,255,255,0.3),
+        500px 450px rgba(255,255,255,0.5);
+    pointer-events: none;
+
         }
 
 
@@ -144,8 +152,11 @@
     <h1>Ruby Nebula</h1>
 
     <p class="subtitle">
-        Writer, Dreamer, Romantic, Philocalist
-        Exploring Humanity, Psychology, Society, Culture, and the Empathy Within the Human Experience
+        Writer, Dreamer, Romantic, Philocalist <br><br>
+        
+        Exploring Humanity, Psychology, Society, Culture, <br><br>
+        
+        and the Empathy Within the Human Experience
     </p>
 
 </header>
